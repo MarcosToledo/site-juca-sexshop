@@ -56,9 +56,9 @@
 }
 
 .banner-container {
-	width: 100%;
-	height: 394px;
 	position: absolute;
+	width: 100%;
+	height: 390px;
 	margin-top: 87px;
 }
 
@@ -82,6 +82,7 @@
 
 .div-descricao-banner-sombra {
 	position: absolute;
+	z-index: 3;
 	margin-left: 860px;
 	margin-top: 120px;
 	width: 479px;
@@ -90,14 +91,6 @@
 	background-color: #000;
 	opacity: 0.6;
 }
-.div-descricao-texto {
-	position: absolute;
-	margin-top: 120px;
-	margin-left: 860px;
-	width: 479px;
-	height: 250px;
-}
-
 .titulo-desc-banner {
 	margin-left: 20px;
 	margin-top: 20px;
@@ -114,12 +107,16 @@
 }
 
 .div-separador-titulo-descricao {
-	position: absolute;
-	margin-left: 880px;
-	margin-top: 165px;
 	width: 389px;
 	height: 2.5px;
 	background-color: #C2185B; 
+  position: absolute;
+  top: 53px;
+  left: 21px;
+}
+
+.produtos-destaque-container {
+	
 }
 
 .div-titulo-produtos-destaque {
@@ -168,6 +165,7 @@
 	width: 402px;
 	height: 403px;
 	background-color: #EEEEEE;
+	box-shadow: 2px 2px 2px #777;
 }
 
 .img-produto {
@@ -226,6 +224,7 @@
 	margin-left: 40px;
 	margin-top: 40px;
 	background-color: #EEEEEE;
+	box-shadow: 3px 3px 3px #777;
 }
 
 .div-titulo-servico-texto {
@@ -284,4 +283,88 @@
 	margin-top: 20px;
 	font-size: 26px;
 	color: #FFF;
+}
+
+.div-formulario-geral {
+	display: flex;
+	justify-content: space-start;
+}
+
+.div-formulario {
+	margin-top: 20px;
+	margin-left: 40px;
+	width: 40%;
+	height: 600px;
+}
+
+.edit {
+	width: 476px;
+	height: 58px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-top: 10px;
+	font-size: 20px;
+	font-style: #DDDDDD;
+	text-indent: 10px;
+	border-color: #C2185B;
+}
+.mensagem {
+	width: 476px;
+	height: 137px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-top: 10px;
+	font-size: 20px;
+	text-decoration: #DDDDDD;
+	text-indent: 10px;
+	border-color: #C2185B;
+}
+
+.botao {
+	width: 143px;
+	height:41px;
+	margin-left: 335px;
+	margin-top: 20px;
+	background-color:  #C2185B;
+	border-style: none;
+	font-size: 25px;
+	text-align: center;
+	color: #FFF;
+}
+
+.div-image-map {
+	position: relative;
+	width: 55%;
+	height: 447px;
+}
+
+.div-image-map img {
+	width: 100%;
+}
+
+.div-numero-telefone {
+	font-size: 35px;
+	color: #fff;
+	background-color: #000;
+}
+
+.div-opacity-telefone {
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 80px;
+	padding-left: 10px;
+	padding-top: 15px;
+	background-color: #000;
+	opacity: 0.7;
+}
+
+.footer {
+	width: 100%;
+	height: 50px;
+	text-align: left;
+	font-size: 30px;
+	text-indent: 20px;
+	color: #fff;
+	background-color: #C2185B;
 }
