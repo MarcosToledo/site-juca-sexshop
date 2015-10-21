@@ -6,16 +6,16 @@
 		<link rel="stylesheet" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
-	<body>
+	<body onload="onresize()">
 		<header class="header">
 			<div class="div-logo">
 				<img src="images/mobile/logo.png" alt="" id="logo">
 			</div>
-			<div class="div-hamburger">
-				<img src="images/hamburger.fw.png"alt="">
+			<div class="div-hamburger" onclick="menu()">
+				<img src="images/hamburger.fw.png" alt="">
 			</div>
 		</header>
-		<nav class="nav">
+		<nav class="nav" id="nav">
 			<ul class="menu">
 				<li class="menu-item">
 					<a href="#">Home</a>
@@ -31,28 +31,29 @@
 				</li>
 			</ul>
 		</nav>
-		<script>
-		function onresize() {
-			var windowWidth = screen.width;
-			var device = 'mobile';
-
-			if (windowWidth > 800) {
-				device = 'desktop';
-			}
-			
-			alterarImagens(device);
-
-			console.log(windowWidth);	
-			console.log(device);	
-		}
-
-		function alterarImagens(device) {
-			var logo = document.getElementById("logo");
-			logo.setAttribute('src', 'images/' + device + '/logo.png');
-		}
-
-		window.addEventListener("resize", onresize)
-
-		</script>
+		<section class="banner-container">
+			<div class="div-sombra-banner"></div>
+			<div class="div-banner">
+				<img id="banner" class="img-banner" src="images/mobile/banner.jpg" alt="">
+			</div>
+				<div class="div-descricao-container"></div>
+			<div class="div-texto-descricao">
+				<div class="div-titulo-banner">
+					Novo consolo do Sex Shop do Juca
+				</div>
+				<div class="div-separador"></div>
+				<div class="div-texto-banner">
+				<p>
+					Lorem ipsum Officia cupidatat consectetur enim ad adipisicing cupidatat cupidatat Excepteur veniam consequat do consectetur. Lorem ipsum Labore incididunt cupidatat veniam non reprehenderit adipisicing irure tempor.
+				</p>			
+				</div>
+			</div>
+		</section>
+		<footer>
+		</footer>
+		<script src="script/script.js" ></script>
+		<script src="script/menu.js" ></script>
 	</body>
-</html>
+
+		
+</html>	
