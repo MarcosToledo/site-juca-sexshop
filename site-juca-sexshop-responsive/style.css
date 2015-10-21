@@ -88,10 +88,7 @@
 }
 
 .div-texto-descricao {
-	position: absolute;
 	color: #fff;
-	top: 20px;
-	left: 20px;
 }
 
 .div-separador {
@@ -278,8 +275,10 @@
 		position: absolute;
 		width: 479px;
 		height: 250px;
-		margin-left: 295px;
-		margin-top: 40px;
+		left: auto;
+		right: 3%;
+		bottom: 3%;
+		top: auto;
 		background-color: #000;
 		opacity: 0.6;
 	}
@@ -287,21 +286,17 @@
 	.div-titulo-banner {
 		margin-top: 10px;
 		font-size: 22px;
-		margin-left: 310px;
-		margin-top: 50px;
 	}
 
 	.div-separador {
 		width: 386px;
 		height: 3px;
-		margin-left: 313px;
 		background: #C2185B; 
 	}
 
 	.div-texto-banner {
 		width: 479px;
 		height: 250px;
-		margin-left: 300px;
 		font-size: 18px;
 	}
 }
@@ -310,11 +305,11 @@
 /*900px*/
 @media screen and (min-width: 56.25em) {
 
-		.div-descricao-container {
+	.div-descricao-container {
 		position: absolute;
 		width: 479px;
 		height: 250px;
-		margin-left: 375px;
+		right: 2%;
 		margin-top: 40px;
 		background-color: #000;
 		opacity: 0.6;
@@ -323,21 +318,18 @@
 	.div-titulo-banner {
 		margin-top: 10px;
 		font-size: 22px;
-		margin-left: 395px;
 		margin-top: 50px;
 	}
 
 	.div-separador {
 		width: 386px;
 		height: 3px;
-		margin-left: 400px;
 		background: #C2185B; 
 	}
 
 	.div-texto-banner {
 		width: 479px;
 		height: 250px;
-		margin-left: 385px;
 		font-size: 18px;
 	}
 }
