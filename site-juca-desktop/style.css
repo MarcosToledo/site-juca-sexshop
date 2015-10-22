@@ -156,7 +156,7 @@
 
 .div-produtos {
 	display: flex;
-	justify-content; space-between;
+	flex-direction: column;
 }
 
 .div-produtos-destaque {
